@@ -1,12 +1,67 @@
-# React + Vite
+# Typing Practice App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based typing practice application that helps users improve their typing speed and accuracy.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time typing feedback with character-by-character highlighting
+- Words per minute (WPM) calculation
+- Accuracy tracking
+- Multiple practice texts
+- Reset and next text functionality
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The application will open in your default browser at `http://localhost:3000`.
+
+## Usage
+
+1. Start typing in the input field to begin the practice session
+2. The text above will highlight in green for correct characters and red for incorrect ones
+3. Your WPM and accuracy will be calculated in real-time
+4. Use the Reset button to start over with the same text
+5. Use the Next Text button to move to a different practice text
+
+## Development
+
+The project is built with:
+- React
+- TypeScript
+- CSS Modules
+
+### Project Structure
+
+```
+src/
+  ├── components/
+  │   └── TypingPractice.tsx
+  ├── data/
+  │   └── texts.ts
+  ├── App.tsx
+  ├── index.tsx
+  └── styles/
+      ├── App.css
+      └── TypingPractice.css
+```
