@@ -1,4 +1,9 @@
 {
-"rewrites": [{ "source": "/(.*)", "destination": "/" }],
-"cleanUrls": true
+"routes": [
+    { 
+    "src": "/[^.]+", 
+    "dest": "/", 
+    "status": 200
+    }
+]
 }
